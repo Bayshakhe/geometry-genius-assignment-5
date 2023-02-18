@@ -10,8 +10,6 @@ document.getElementById('rectangle-calculate').addEventListener('click', functio
     }
     else{
         const ractangleValue = widthInputValue * lengthInputValue;
-        trAppendChild(ractangleValue);
+        trAppendChild(ractangleValue, 'Ractangle');
     }
-
-
 })

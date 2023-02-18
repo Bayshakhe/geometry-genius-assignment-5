@@ -7,10 +7,9 @@ document.getElementById('triangle-calculate').addEventListener('click', function
         alert('Please input a valid number');
         document.getElementById('triangle-base-input').value = '';
         document.getElementById('triangle-height-input').value = '';
-        
     }
     else{
         const triangleValue = 0.5 * baseInputValue * heightInputValue;
-        trAppendChild(triangleValue);
+        trAppendChild(triangleValue, 'Triangle');
     }
 })
