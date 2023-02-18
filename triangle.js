@@ -1,4 +1,3 @@
-let number = 0;
 document.getElementById('triangle-calculate').addEventListener('click', function(){
     const baseInputValue = getElementByInputField('triangle-base-input');
     const heightInputValue = getElementByInputField('triangle-height-input');

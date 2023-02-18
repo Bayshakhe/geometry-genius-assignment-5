@@ -12,5 +12,9 @@ function getElementByInputField(id){
     const inputFieldIdValue = parseInt(inputFieldIdString);
     return inputFieldIdValue;
 }
+let number = 0;
+
+
+
 
 
