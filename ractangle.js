@@ -10,17 +10,7 @@ document.getElementById('rectangle-calculate').addEventListener('click', functio
     }
     else{
         const ractangleValue = widthInputValue * lengthInputValue;
-        number += 1;
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-           <tr>
-                <td> ${number}. Ractangle </td>
-                <td> ${ractangleValue}cm<sup>2</sup> </td>
-                <td> <button class="btn-info rounded-xl p-3 text-white">Convert to m<sup>2</sup></button> </td>
-            </tr>
-        `
-        const calculationArea = document.getElementById('calculation-area');
-        calculationArea.appendChild(tr);
+        trAppendChild(ractangleValue);
     }
 
 

@@ -8,8 +8,8 @@ function getElementByInputField(id){
     const inputFieldIdValue = parseInt(inputFieldIdString);
     return inputFieldIdValue;
 }
-let number = 0;
 
+let number = 0;
 function trAppendChild(element){
     number += 1;
     const tr = document.createElement('tr');
@@ -20,7 +20,6 @@ function trAppendChild(element){
             <td> <button class="btn-info rounded-xl p-3 text-white">Convert to m<sup>2</sup></button> </td>
         </tr>
     `
-
 const calculationArea = document.getElementById('calculation-area');
 calculationArea.appendChild(tr);
     
