@@ -14,6 +14,3 @@ function getElementByInputField(id){
 }
 
 
-document.getElementById('triangle-calculate').addEventListener('click', function(){
-    console.log(getElementByInputField('triangle-base-input'))
-})

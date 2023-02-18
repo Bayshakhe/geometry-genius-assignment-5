@@ -34,8 +34,8 @@
 
     <!-- main section starts from here -->
     <main>
-        <div class="md:flex gap-5">
-            <div class="w-3/4 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+        <div class="md:flex gap-5 mx-5">
+            <div class="w-4/6 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
                 <div class="col card bg-base-100 shadow mb-5 ">
                     <figure class="px-10 pt-10">
                       <img src="./images/triangle.png" alt="Triangle" class="rounded-xl" />
@@ -59,8 +59,8 @@
                       <h2 class="card-title">Ractangle</h2>
                       <p>Area(A) = w X l</p>
                       <div class="my-3">
-                        <input type="text" placeholder="w" class="input input-sm w-1/4 bg-slate-100 mx-2" /> cm 
-                        <input type="text" placeholder="l" class="input input-sm w-1/4 bg-slate-100 mx-2" /> cm 
+                        <input id="ractangle-width-input" type="text" placeholder="w" class="input input-sm w-1/4 bg-slate-100 mx-2" /> cm 
+                        <input id="ractangle-length-input" type="text" placeholder="l" class="input input-sm w-1/4 bg-slate-100 mx-2" /> cm 
                       </div>
     
                       <button id="rectangle-calculate" class="bn btn-block btn-info rounded-lg p-3 text-white font-bold">Calculate</button>
@@ -128,9 +128,14 @@
                     </div>
                 </div>
             </div>
-            <div class="w-3/4 md:w-1/4 mx-auto">
-                <div id="calculation-area" class=" h-[40%] col card bg-base-100 shadow mb-5 text-center">
+            <div class="w-full md:w-2/6 mx-auto">
+                <div class=" h-[40%] col card bg-base-100 shadow mb-5 text-center">
                     <p class="font-bold text-xl py-5 underline">Area Calculation</p>
+                    <table class="table w-full px-5">
+                      <tbody id="calculation-area">
+                          
+                      </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -139,5 +144,6 @@
     
 
     <script src="./index.js"></script>
+    <script src="./triangle.js"></script>
 </body>
 </html>
