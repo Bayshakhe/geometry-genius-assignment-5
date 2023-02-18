@@ -1,13 +1,19 @@
-document.getElementById('blog-btn').addEventListener('click', function(){
-    document.location.href = 'blog.html'
-})
+// document.getElementById('blog-btn').addEventListener('click', function(){
+//     window.location.href = 'blog.html'
+// })
 
 // document.getElementById('geometry-btn').addEventListener('click', function(){
 //     window.location.href = 'index.html'
-//     console.log(true)
 // })
 
+function getElementByInputField(id){
+    const inputFieldId = document.getElementById(id);
+    const inputFieldIdString = inputFieldId.value;
+    const inputFieldIdValue = parseInt(inputFieldIdString);
+    return inputFieldIdValue;
+}
 
-document.getElementById('geometry-btn').addEventListener('click', function(){
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+
+document.getElementById('triangle-calculate').addEventListener('click', function(){
+    console.log(getElementByInputField('triangle-base-input'))
 })
